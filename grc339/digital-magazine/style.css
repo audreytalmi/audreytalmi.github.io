@@ -1,0 +1,335 @@
+/*CSS document*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+img {
+width: 100%;
+display: block;
+}
+main.Photo_Gallery{
+position: relative;
+overflow: hidden;
+padding-bottom: calc(66% + 4.5em);
+grid-column: 1/3;
+}
+figure.gallery{
+width: calc(100%-2em);
+position: absolute;
+opacity: 0;
+transition: opacity .5s;
+}
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+opacity: 1;
+}
+.Photo-nav{
+display: grid;
+grid-column: 1/3;
+grid-template-columns: repeat(8,1fr);
+grid-gap: .2em;
+}
+footer.foot{
+margin-top: 1em;
+}
+input {
+display: none;
+}
+div.newsletter{
+max-width: 40em;
+margin: 1em;
+padding: 1em;
+}
+input[type="checkbox"]{
+display: inline-block;
+}
+input[type=text]{
+display: inline-block;
+}
+h3.news{
+margin-top: 1em;
+margin-bottom: 0.25em;
+}
+ul{
+list-style-type: none;
+padding: 0.25em;
+font-family: "cormorant-garamond", serif;
+font-weight: 400;
+font-style: normal;
+}
+li{
+padding:0.5em;
+font-family: "cormorant-garamond", serif;
+font-weight: 400;
+font-style: normal;
+}
+body.subs{
+line-height: 1.4em;
+color: rgb(39,57,64);
+box-sizing: border-box;
+}
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+flex: 4 1 30em; 
+box-sizing: border-box;
+margin: 0.5em 0em 0.5em 0em;
+}
+.personal-info ul li{
+display: flex;
+flex-wrap: wrap;
+}
+.personal-info ul li label{
+flex: 0 0 10em;
+margin: 0.5em 0em 0.5em 0em;
+}
+.order ul li {
+flex: 1 0 15em;
+margin: 0em 2em 0em 0em;
+}
+button{
+margin-top: 5em;
+margin-bottom: 2em;
+}
+:placeholder-shown{
+font-family: "cormorant-garamond", serif;
+font-weight: 400;
+font-style: normal;
+}
+h2.subscribe{
+font-family: "cormorant-garamond", serif;
+font-weight: bold;
+color:rgb(45,98,118);
+font-size: 2em;
+}
+div.sub{
+display: flex;
+flex-direction: column;
+grid-column: 1/ -1;
+text-align: center;
+padding:1em;
+}
+.sub a{
+text-decoration: none;
+font-weight: bold;
+font-size: 1.2em;
+color: rgb(45,98,118);
+background-color: rgb(179,198,208);
+padding: 0.6em 0.7em 0.6em;
+}
+div.container, div.home-container {
+max-width: 40em;
+position: relative;
+margin: 0 auto ;
+}
+h1{
+width: 10em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+}
+h2{
+font-weight: bold;
+color:rgb(45,98,118);
+font-size: 2em;
+padding-left: 0em;
+padding-right: 0.5em;
+}
+h3{
+font-family: "tenez", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-weight: bold;
+color:rgb(45,98,118);
+font-size: 1.5em;
+padding-left: 0em;
+padding-right: 0.5em;
+}
+aside h2{
+font-size: 1em;
+padding-right: 0.5em;
+}
+section.mainstory h2 {
+font-size: 3em;
+}
+section.secondary h2{
+font-size: 2em;
+}
+section.tertiary h2{
+font-size: 1em;
+border-top: 1.5px solid rgb(45,98,118) ;
+padding-left: 0em;
+}
+p{
+text-decoration:none ;
+color: rgb(39,57,64);
+padding-bottom: 2em;
+font-family: "cormorant-garamond", serif;
+font-weight: 400;
+font-style: normal;
+padding-right: 1em;
+}
+nav ul{
+list-style: none;    
+margin-top: 1em;
+margin-bottom: 1em;
+text-align: left;
+font-family: "cormorant-garamond", serif;
+font-weight: 400;
+font-style: normal;
+}
+nav ul li{
+font-weight: bold;
+font-size: 1em;
+padding-top: 0.5em;
+padding-left: 0.6em;
+}
+nav ul li a{
+color:rgb(39,57,64);
+}
+a{
+text-decoration: none;
+}
+figcaption{
+color: rgb(101, 101, 101);
+font-family: "cormorant-garamond", serif;
+font-weight: 400;
+font-style: italic;
+padding-bottom: 1em;
+padding-left: 1em;
+}
+aside{
+background-color: rgb(179,198,208);
+padding:1em 0.5em 1em;
+}
+footer {
+height: 3em; 
+box-sizing: border-box;
+padding: 1em 1em 1em;
+font-family: sans-serif;
+background: rgb(45,98,118);
+box-sizing: border-box;
+}
+footer p{
+color: rgb(251,251,239);
+}
+body{
+background-color: rgb(251,251,239)
+}
+@media screen and (min-width:40em){
+nav ul li{
+display: inline;
+padding-right: 2em;
+padding-left: 0em;
+}
+h1{
+padding:0em
+}
+h2{
+font-family: "tenez", sans-serif;
+font-weight: 700;
+font-style: normal;
+color:rgb(45,98,118);
+font-size: 2.1em;
+padding-bottom: 0.5em;
+padding-left: 0em;
+}
+p{
+padding-left: 0em;
+}
+figcaption{
+padding-left: 0em;
+}
+aside h2{
+padding-top:0.5em;
+padding-left: 0em;
+}
+section.tertiary h2{
+padding-left: 0em
+}
+@media only screen and (min-width:60em){
+div.home-container{
+max-width:80em;
+padding: 0 1em;
+display:grid;
+grid-template-columns: 3fr 1fr;
+grid-gap: 1em;
+}
+div.container{
+max-width:60em;
+padding: 0 1em;
+display:grid;
+grid-template-columns: 3fr 1fr;
+grid-gap: 1em;
+}
+header,footer{
+grid-column: 1/3;
+}
+div.home-container main{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 1em;
+}
+div.home-container aside{
+background: none;
+padding: 0;
+margin-top: 0;
+}
+div.container aside{
+margin-top: 0;
+}
+section.mainstory{
+grid-column: 2/4;
+grid-row: 1/3;
+display: flex;
+}
+section.mainstory a{
+flex: 1 0 12em;
+display: flex;
+flex-direction: column;
+}
+section.mainstory a figure{
+flex: 1 0 12em;
+display: flex;
+}
+section.mainstory a figure img{
+object-fit: cover;
+}
+section.mainstory a h2{
+flex: 0 0 1em;
+}
+section.mainstory a p{
+flex: 0 0 auto;
+}
+section.secondary{
+display: flex;
+}
+section.secondary a{
+flex: 1 0 12em;
+display: flex;
+flex-direction: column;
+}
+section.secondary a figure{
+flex: 1 0 12em;
+display: flex;
+}
+section.secondary a figure img{
+object-fit: cover;
+}
+section.secondary a h2{
+flex: 0 0 1em;
+}
+section.secondary a p{
+flex: 0 0 4em;
+}
+section.tertiary h2{
+padding-top: 0.5em;
+}
+div.newsletter {
+margin: auto;
+}
+}
+}
